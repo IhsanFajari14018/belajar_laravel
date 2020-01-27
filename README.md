@@ -1,7 +1,4 @@
-# Tutorial 5 - Request Data Pada Laravel
+# Tutorial 8 - Sistem Template Blade Laravel
 
- - passing data from URI
- - learn how to use get and post
-
-
- 
+ - create template (page that containing header, main, footer)
+ - passing value / page content with @yield to call the value / content
