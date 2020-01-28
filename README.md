@@ -1,4 +1,5 @@
-# Tutorial 8 - Sistem Template Blade Laravel
+# Tutorial 8 - CRUD - Get
 
- - create template (page that containing header, main, footer)
- - passing value / page content with @yield to call the value / content
+ - Create database and table pegawai
+ - Retrieve data from table pegawai
+ - Display data to index.blade.php
