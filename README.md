@@ -1,4 +1,4 @@
-# Tutorial 8 - CRUD - Get
+# Tutorial 9 - CRUD - Get
 
  - Create database and table pegawai
  - Retrieve data from table pegawai
