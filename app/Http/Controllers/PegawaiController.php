@@ -49,6 +49,4 @@ class PegawaiController extends Controller{
     return "Nama: ".$nama." | Alamat: ".$alamat;
   }
 
-
-
 }
