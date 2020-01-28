@@ -1,5 +1,5 @@
-# Tutorial 8 - CRUD - Get
+# Tutorial 10 - CRUD - Add
 
- - Create database and table pegawai
- - Retrieve data from table pegawai
- - Display data to index.blade.php
+ - Create form to add new pegawai
+ - Insert form value to table pegawai
+ - Redirect to page of list pegawai
