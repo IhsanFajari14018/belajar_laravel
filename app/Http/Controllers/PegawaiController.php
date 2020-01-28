@@ -20,6 +20,24 @@ class PegawaiController extends Controller{
     return view('index', ['pegawai' => $pegawai]);
   }
 
+  /* method untuk menampilkan view form tambah pegawai */
+  public function tambah(){
+    return view('tambah');
+  }
+
+  /* model method - with query builder */
+  public function store(Request $request){
+    // insert data to pegawai table
+    DB::table('pegawai')->insert([
+      'nama'    => $request->nama,
+      'jabatan' => $request->jabatan,
+      'umur'    => $request->umur,
+      'alamat'  => $request->alamat
+    ]);
+
+    return redirect('/pegawai');
+  }
+
   /* */
   public function formulir(){
     return view('formulir');
