@@ -1,5 +1,6 @@
-# Tutorial 10 - CRUD - Add
+# Tutorial 11 - CRUD - Edit
+https://www.malasngoding.com/tutorial-crud-laravel/
 
- - Create form to add new pegawai
- - Insert form value to table pegawai
- - Redirect to page of list pegawai
+ - Load pegawai based on id
+ - Put loaded data into edit form
+ - Update pegawai based on id
