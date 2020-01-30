@@ -37,5 +37,7 @@ Route::get('/blog/kontak', 'BlogController@kontak');
 
 //Route CRUD:
 Route::get('/pegawai', 'PegawaiController@index');
-Route::get('/pegawai/tambah','PegawaiController@tambah'); //retrieve
-Route::post('/pegawai/store','PegawaiController@store'); //add
+Route::get('/pegawai/tambah','PegawaiController@tambah');     //retrieve
+Route::post('/pegawai/store','PegawaiController@store');      //add
+Route::get('/pegawai/edit/{id}','PegawaiController@edit');    // load edit view
+Route::post('/pegawai/update','PegawaiController@update');    // process edit
