@@ -38,6 +38,34 @@ class PegawaiController extends Controller{
     return redirect('/pegawai');
   }
 
+  public function edit($id){
+    $pegawai = DB::table('pegawai')->where('pegawai_id', $id)->first(); //retrieve one
+    // $pegawai = DB::table('pegawai')->where('pegawai_id', $id)->get(); //can retrieve more than one
+
+    return view('edit', ['pegawai' => $pegawai]);
+  }
+
+  /* model method - update pegawai by id */
+  public function update(Request $request){
+
+    //query to update data pegawai:
+    DB::table('pegawai')->where('pegawai_id', $request->id)->update([
+      'nama'    => $request->nama,
+      'jabatan' => $request->jabatan,
+      'umur'    => $request->umur,
+      'alamat'  => $request->alamat
+    ]);
+
+    //alihkan halaman ke pegawai
+    return redirect('/pegawai');
+  }
+
+
+
+
+
+
+
   /* */
   public function formulir(){
     return view('formulir');
