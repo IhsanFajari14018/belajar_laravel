@@ -25,7 +25,7 @@ Route::get('blog', function() {
 
 Route::get('dosen', 'DosenController@index');
 
-Route::get('/pegawai/{nama}', 'PegawaiController@index');
+// Route::get('/pegawai/{nama}', 'PegawaiController@index');
 
 Route::get('/formulir', 'PegawaiController@formulir');
 Route::post('/formulir/proses', 'PegawaiController@proses');
@@ -34,3 +34,10 @@ Route::post('/formulir/proses', 'PegawaiController@proses');
 Route::get('/blog','BlogController@home');
 Route::get('/blog/tentang', 'BlogController@tentang');
 Route::get('/blog/kontak', 'BlogController@kontak');
+
+//Route CRUD:
+Route::get('/pegawai', 'PegawaiController@index');
+Route::get('/pegawai/tambah','PegawaiController@tambah');     //retrieve
+Route::post('/pegawai/store','PegawaiController@store');      //add
+Route::get('/pegawai/edit/{id}','PegawaiController@edit');    // load edit view
+Route::post('/pegawai/update','PegawaiController@update');    // process edit

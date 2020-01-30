@@ -1,4 +1,6 @@
-# Tutorial 8 - Sistem Template Blade Laravel
+# Tutorial 11 - CRUD - Edit
+https://www.malasngoding.com/tutorial-crud-laravel/
 
- - create template (page that containing header, main, footer)
- - passing value / page content with @yield to call the value / content
+ - Load pegawai based on id
+ - Put loaded data into edit form
+ - Update pegawai based on id
