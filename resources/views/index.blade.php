@@ -30,7 +30,7 @@
       <td>
         <a href="/pegawai/edit/{{ $p->pegawai_id }}">Edit</a>
         |
-        <a href="/pegawai/hapus/{{ $p->pegawai_id }}">Hapus</a>
+        <a href="/pegawai/delete/{{ $p->pegawai_id }}">Hapus</a>
       </td>
     </tr>
     @endforeach
