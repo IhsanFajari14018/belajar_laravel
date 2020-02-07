@@ -2,6 +2,14 @@
 <html>
 <head>
   <title>Tutorial Membuat CRUD Pada Laravel - www.malasngoding.com</title>
+
+  <style type ="text/css">
+  .pagination li{
+    float: left;
+    list-style-type: none;
+    margin: 5px;
+  }
+  </style>
 </head>
 <body>
 
@@ -30,11 +38,19 @@
       <td>
         <a href="/pegawai/edit/{{ $p->pegawai_id }}">Edit</a>
         |
-        <a href="/pegawai/hapus/{{ $p->pegawai_id }}">Hapus</a>
+        <a href="/pegawai/delete/{{ $p->pegawai_id }}">Hapus</a>
       </td>
     </tr>
     @endforeach
   </table>
+
+  <br/>
+
+  Halaman: {{$pegawai->currentPage()}} <br/>
+  Jumlah Data: {{$pegawai->total()}} <br/>
+  Data Per Halaman: {{$pegawai->perPage()}} <br/>
+
+  {{$pegawai->links()}}
 
 
 </body>

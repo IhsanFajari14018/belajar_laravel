@@ -1,6 +1,5 @@
-# Tutorial 11 - CRUD - Edit
-https://www.malasngoding.com/tutorial-crud-laravel/
+# Tutorial 15 - Pagination
+https://www.malasngoding.com/membuat-pagination-pada-laravel/
 
- - Load pegawai based on id
- - Put loaded data into edit form
- - Update pegawai based on id
+ - Collect data with limited range using pagination()
+ - Display data with pagination so the data is not displayed all, but already being breakdown
