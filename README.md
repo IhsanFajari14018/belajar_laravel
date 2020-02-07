@@ -1,6 +1,5 @@
-# Tutorial 14 - Seeding & Faker
-https://www.malasngoding.com/seeding-dan-faker-pada-laravel/
+# Tutorial 15 - Pagination
+https://www.malasngoding.com/membuat-pagination-pada-laravel/
 
- - Insert data automaticaly using class and it's method, that is already set with certain amuount or specific data, or create random data (dummy)
- - Sample command to execute the seeder and faker:
-   php artisan db:seed --class=PegawaiSeeder
+ - Collect data with limited range using pagination()
+ - Display data with pagination so the data is not displayed all, but already being breakdown
