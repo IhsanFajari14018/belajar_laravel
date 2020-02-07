@@ -2,6 +2,14 @@
 <html>
 <head>
   <title>Tutorial Membuat CRUD Pada Laravel - www.malasngoding.com</title>
+
+  <style type ="text/css">
+  .pagination li{
+    float: left;
+    list-style-type: none;
+    margin: 5px;
+  }
+  </style>
 </head>
 <body>
 
@@ -35,6 +43,14 @@
     </tr>
     @endforeach
   </table>
+
+  <br/>
+
+  Halaman: {{$pegawai->currentPage()}} <br/>
+  Jumlah Data: {{$pegawai->total()}} <br/>
+  Data Per Halaman: {{$pegawai->perPage()}} <br/>
+
+  {{$pegawai->links()}}
 
 
 </body>
