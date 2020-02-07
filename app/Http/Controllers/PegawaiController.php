@@ -13,8 +13,13 @@ class PegawaiController extends Controller{
   // }
 
   public function index(){
+    // NORMAL
     // mengambil data dari table pegawai
-    $pegawai = DB::table('pegawai')->get();
+    // $pegawai = DB::table('pegawai')->get();
+
+    // WITH PAGINATION
+    // mengambil data dari table pegawai
+    $pegawai = DB::table('pegawai')->paginate(10);
 
     // mengirim data pegawai ke view index
     return view('index', ['pegawai' => $pegawai]);
@@ -59,7 +64,7 @@ class PegawaiController extends Controller{
     //alihkan halaman ke pegawai
     return redirect('/pegawai');
   }
-  
+
   /* model method - delete pegawai by id */
   public function delete($id){
     DB::table('pegawai')->where('pegawai_id', $id)->delete();
