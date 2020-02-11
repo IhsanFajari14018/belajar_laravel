@@ -72,7 +72,19 @@ class PegawaiController extends Controller{
   }
 
 
+  public function cari(Request $request){
+    // this flash required to use the old() laravel function
+    $request->flash();
 
+    // menangkap data pencarian
+    $cari = $request->cari;
+
+    // mengambil data dari table pegawai sesuai pencarian data
+    $pegawai = DB::table('pegawai')->where('nama','like','%'.$cari."%")->paginate();
+
+    //mengirim data pegawai ke view index
+    return view('index', ['pegawai' => $pegawai]);
+  }
 
 
 
