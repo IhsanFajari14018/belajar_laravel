@@ -1,5 +1,6 @@
-# Tutorial 15 - Pagination
-https://www.malasngoding.com/membuat-pagination-pada-laravel/
+# Tutorial 16 - Membuat Pencarian Pada Laravel
+https://www.malasngoding.com/membuat-pencarian-pada-laravel/
 
- - Collect data with limited range using pagination()
- - Display data with pagination so the data is not displayed all, but already being breakdown
+ - Doing search by submitting text into form
+ - Execute %LIKE% query
+ - Display previous search by putting the value in session and old() laravel function
