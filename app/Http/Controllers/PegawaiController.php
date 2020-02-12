@@ -72,6 +72,9 @@ class PegawaiController extends Controller{
   }
 
 
+  /*
+  * Process search and display the result
+  */
   public function cari(Request $request){
     // this flash required to use the old() laravel function
     $request->flash();
