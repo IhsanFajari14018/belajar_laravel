@@ -1,26 +1,58 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
 <head>
-	<title>Tutorial Membuat CRUD Pada Laravel - www.malasngoding.com</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" rel="stylesheet">
+	<title>Tutorial Laravel #21 : CRUD Eloquent Laravel - www.go-wedd.com</title>
 </head>
 <body>
+	<div class="container">
+		<div class="card mt-5">
+			<div class="card-header text-center">
+				CRUD Data Pegawai - <strong>TAMBAH DATA</strong> - <a href="https://www.malasngoding.com/category/laravel" target="_blank">www.go-wedd.com</a>
+			</div>
+			<div class="card-body">
+				<a href="/pegawai" class="btn btn-primary">Kembali</a>
+				<br/>
+				<br/>
 
-	<h2><a href="https://www.malasngoding.com">www.malasngoding.com</a></h2>
-	<h3>Data Pegawai</h3>
+				<form method="post" action="/pegawai/store">
 
-	<a href="/pegawai"> Kembali</a>
+					{{ csrf_field() }}
 
-	<br/>
-	<br/>
+					<div class="form-group">
+						<label>Nama</label>
+						<input type="text" name="nama" class="form-control" placeholder="Nama pegawai ..">
 
-	<form action="/pegawai/store" method="post">
-		{{ csrf_field() }}
-		Nama <input type="text" name="nama" required="required"> <br/>
-		Jabatan <input type="text" name="jabatan" required="required"> <br/>
-		Umur <input type="number" name="umur" required="required"> <br/>
-		Alamat <textarea name="alamat" required="required"></textarea> <br/>
-		<input type="submit" value="Simpan Data">
-	</form>
+						@if($errors->has('nama'))
+						<div class="text-danger">
+							{{ $errors->first('nama')}}
+						</div>
+						@endif
 
+					</div>
+
+					<div class="form-group">
+						<label>Alamat</label>
+						<textarea name="alamat" class="form-control" placeholder="Alamat pegawai .."></textarea>
+
+						@if($errors->has('alamat'))
+						<div class="text-danger">
+							{{ $errors->first('alamat')}}
+						</div>
+						@endif
+
+					</div>
+
+					<div class="form-group">
+						<input type="submit" class="btn btn-success" value="Simpan">
+					</div>
+
+				</form>
+
+			</div>
+		</div>
+	</div>
 </body>
 </html>
