@@ -23,12 +23,12 @@ class PegawaiSeeder extends Seeder{
     //FAKER
     $faker = FAKER::create('id_ID');
 
-    for ($i=0; $i < 50 ; $i++) {
+    for ($i=0; $i < 10 ; $i++) {
       // insert data to table pegawai using Faker
       DB::table('pegawai')->insert([
           'nama'      => $faker->name,
-          'jabatan'   => $faker->jobTitle,
-          'umur'      => $faker->numberBetween(20,35),
+          // 'jabatan'   => $faker->jobTitle,
+          // 'umur'      => $faker->numberBetween(20,35),
           'alamat'    => $faker->address
       ]);
     }
