@@ -9,4 +9,8 @@ class Pegawai extends Model{
   //base table
   protected $table = "pegawai";
 
+  //Mass Asignment ??
+  protected $fillable = ['nama', 'alamat'];
+  
+
 }
