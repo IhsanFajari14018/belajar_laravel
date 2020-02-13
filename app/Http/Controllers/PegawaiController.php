@@ -3,26 +3,61 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use Illuminate\Support\Facades\DB;
+// use Illuminate\Support\Facades\DB;
+
+//panggil model pegawai:
+use App\Pegawai;
 
 class PegawaiController extends Controller{
 
-  /* Previous tutorial - sending parameter from URI */
-  // public function index($nama){
-  //   return $nama;
-  // }
-
   public function index(){
+    // $pegawai = Pegawai::all();
+    // $pegawai = Pegawai::first();
+    // $pegawai = Pegawai::where('id', '1')->get();
+    // $pegawai = Pegawai::where('id', '<=','10')->get();
+    // $pegawai = Pegawai::where('nama', 'like', '%y%')->get();
+    $pegawai = Pegawai::paginate(4);
+
+    return view('index_2', ['pegawai' => $pegawai]);
+    // return $pegawai;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  public function index_old(){
     // NORMAL
     // mengambil data dari table pegawai
     // $pegawai = DB::table('pegawai')->get();
 
     // WITH PAGINATION
     // mengambil data dari table pegawai
-    $pegawai = DB::table('pegawai')->paginate(10);
+    // $pegawai = DB::table('pegawai')->paginate(10);
+    $pegawai = Pegawai::all();
 
     // mengirim data pegawai ke view index
-    return view('index', ['pegawai' => $pegawai]);
+    // return view('index', ['pegawai' => $pegawai]);
+    return view('index_2', ['pegawai' => $pegawai]);
+    // return $pegawai;
   }
 
   /* method untuk menampilkan view form tambah pegawai */
@@ -71,10 +106,7 @@ class PegawaiController extends Controller{
     return redirect('/pegawai');
   }
 
-
-  /*
-  * Process search and display the result
-  */
+  /* Process search and display the result */
   public function cari(Request $request){
     // this flash required to use the old() laravel function
     $request->flash();
