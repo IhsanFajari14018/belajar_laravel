@@ -30,7 +30,7 @@
     <section class="container">
       <div class="row">
         <div class="col-12 text-center">
-          <h2 class="display-2">www.malasngoding.com</h2>
+          <h2 class="display-2">www.go-wedd.com</h2>
         </div>
         <div class="col-12">
           <h3>Data Pegawai</h3>
