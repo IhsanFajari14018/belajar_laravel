@@ -1,14 +1,6 @@
-# Tutorial 20 - Eloquent
-https://www.malasngoding.com/eloquent-laravel/
+# Tutorial 21 - CRUD Laravel Menggunakan Eloquent
+https://www.malasngoding.com/crud-laravel-menggunakan-eloquent/
 
- - create model
- php artisan model make:model Pegawai -m
- - create seeder
- php artisan make:seed PegawaiSeeder
- php artisan db:seed --class=PegawaiSeeder
-
- - call Eloquent
- NOTES:
- ::all() can be print out using @foreach
- ::first() cannot be print out using @foreach, just directly call the variable name
- ::find(2), and so the rules apply like using ::first()
+ - Change Query builder to Eloquent
+ - Implement CRUD with Eloquent
+ - Disable previous method with query builder by changing the name method with `_old`
