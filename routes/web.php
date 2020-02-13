@@ -47,3 +47,6 @@ Route::get('/pegawai/cari','PegawaiController@cari');           // search
 //Route Input Validation:
 Route::get('/input','MalasngodingController@input');           // Load input form
 Route::post('/proses','MalasngodingController@proses');           // process
+
+//Route CRUD Eloquent
+Route::put('/pegawai/update/{id}', 'PegawaiController@update');
