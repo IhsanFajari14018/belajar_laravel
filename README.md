@@ -1,6 +1,6 @@
-# Tutorial 16 - Membuat Pencarian Pada Laravel
-https://www.malasngoding.com/membuat-pencarian-pada-laravel/
+# Tutorial 21 - CRUD Laravel Menggunakan Eloquent
+https://www.malasngoding.com/crud-laravel-menggunakan-eloquent/
 
- - Doing search by submitting text into form
- - Execute %LIKE% query
- - Display previous search by putting the value in session and old() laravel function
+ - Change Query builder to Eloquent
+ - Implement CRUD with Eloquent
+ - Disable previous method with query builder by changing the name method with `_old`

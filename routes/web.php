@@ -43,3 +43,10 @@ Route::get('/pegawai/edit/{id}','PegawaiController@edit');      // load edit vie
 Route::post('/pegawai/update','PegawaiController@update');      // process edit
 Route::get('/pegawai/delete/{id}','PegawaiController@delete');  // delete
 Route::get('/pegawai/cari','PegawaiController@cari');           // search
+
+//Route Input Validation:
+Route::get('/input','MalasngodingController@input');           // Load input form
+Route::post('/proses','MalasngodingController@proses');           // process
+
+//Route CRUD Eloquent
+Route::put('/pegawai/update/{id}', 'PegawaiController@update');
