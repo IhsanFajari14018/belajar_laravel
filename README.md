@@ -9,3 +9,4 @@ https://www.malasngoding.com/relasi-one-to-one-eloquent/
    ex: php artisan make:model Pengguna
  - Create Controller Pengguna
    ex: php artisan make:controller ControllerPengguna
+ - Call phone data from table pengguna. It's possible because linked by hasOne() and belongsTo()
