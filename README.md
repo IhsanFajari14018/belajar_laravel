@@ -1,6 +1,11 @@
-# Tutorial 21 - CRUD Laravel Menggunakan Eloquent
-https://www.malasngoding.com/crud-laravel-menggunakan-eloquent/
+# Tutorial 23 - Relasi One To One Eloquent
+https://www.malasngoding.com/relasi-one-to-one-eloquent/
 
- - Change Query builder to Eloquent
- - Implement CRUD with Eloquent
- - Disable previous method with query builder by changing the name method with `_old`
+ - Create table using migration and create dummy with seeder.
+   ex: php artisan make:migration create_telepon_table
+   ex: php artisan make:seeder TeleponSeeder
+   ex: php artisan db:seed --class=TeleponSeeder
+ - Create model pengguna & Telepon
+   ex: php artisan make:model Pengguna
+ - Create Controller Pengguna
+   ex: php artisan make:controller ControllerPengguna
