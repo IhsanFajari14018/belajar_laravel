@@ -1,8 +1,5 @@
-# Tutorial 22 - Soft Deletes Laravel
-https://www.malasngoding.com/soft-deletes-laravel/
+# Tutorial 24 - Relasi One To Many Eloquent
+https://www.malasngoding.com/relasi-one-to-many-eloquent/
 
- - Delete data by updating deleted_at
- - Retrieve all data without retrieve the deleted_at
- - Restore deleted data by setting the deleted_at to NULL
- - Able to Restore Trashed Data
- - Able to Delete Permanently Trashed Data
+- Article using hasMany() then Tag using belongsTo()
+- Can directly access each column of joined table, by doing foreach at variable $a->tags
