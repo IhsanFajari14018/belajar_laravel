@@ -62,3 +62,6 @@ Route::get('/guru/hapus_permanen_semua', 'GuruController@hapus_permanen_semua');
 
 //Route Pengguna
 Route::get('/pengguna','PenggunaController@index');             // Load data pengguna
+
+//Route Article
+Route::get('/article', 'WebController@index');
