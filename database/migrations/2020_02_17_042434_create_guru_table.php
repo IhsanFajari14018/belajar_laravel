@@ -18,7 +18,7 @@ class CreateGuruTable extends Migration
             $table->string('nama');
             $table->integer('umur');
             $table->timestamps();
-            $table->dateTime('deleted_at');
+            $table->dateTime('deleted_at')->nullable();
         });
     }
 
