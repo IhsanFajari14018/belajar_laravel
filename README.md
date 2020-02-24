@@ -1,6 +1,5 @@
-# Tutorial 21 - CRUD Laravel Menggunakan Eloquent
-https://www.malasngoding.com/crud-laravel-menggunakan-eloquent/
+# Tutorial 24 - Relasi One To Many Eloquent
+https://www.malasngoding.com/relasi-one-to-many-eloquent/
 
- - Change Query builder to Eloquent
- - Implement CRUD with Eloquent
- - Disable previous method with query builder by changing the name method with `_old`
+- Article using hasMany() then Tag using belongsTo()
+- Can directly access each column of joined table, by doing foreach at variable $a->tags
