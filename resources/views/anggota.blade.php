@@ -9,7 +9,7 @@
 	<div class="container">
 		<div class="card mt-5 mb-5">
 			<div class="card-body">
-				<h3 class="text-center"><a href="https://www.go-wedd.com">www.go-weedd.com</a></h3>
+				<h3 class="text-center"><a href="https://www.go-wedd.com">www.go-wedd.com</a></h3>
 				<h5 class="text-center my-4">Eloquent Many To Many Relationship</h5>
 				<table class="table table-bordered table-striped">
 					<thead>
