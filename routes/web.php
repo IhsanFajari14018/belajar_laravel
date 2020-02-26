@@ -65,6 +65,3 @@ Route::get('/pengguna','PenggunaController@index');             // Load data pen
 
 //Route Article
 Route::get('/article', 'WebController@index');
-
-//Route Many to Many Relationship
-Route::get('/anggota', 'DikiController@index');
