@@ -1,7 +1,7 @@
-# Tutorial 25 - Relasi Many To Many Eloquent
-https://www.malasngoding.com/tutorial-laravel-25-relasi-many-to-many-eloquent/
+# Tutorial 28 - Encrypt and Decrypt Laravel
+https://www.malasngoding.com/encrypt-dan-decrypt-laravel/
 
-- The Connector table (Normalization for Many to Many relationship) name, must be with _ , like 'anggota' with 'hadiah', so it named 'anggota_hadiah'
-- Both models use belongsToMany()
-- multi loop in foreach, will return the relationship data
-- You also can count each ammount of hadiah (array)
+- use Illuminate\Support\Facades\Crypt;
+- Call Encrypt:  Crypt::encryptString('String')
+- Call Decrypt:  Crypt::decrypt($variable)
+- Array can also be encrypt and decrypt
