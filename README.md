@@ -1,9 +1,6 @@
-# Tutorial 26 - Membuat Login dan Register Dengan Laravel
-https://www.malasngoding.com/membuat-login-dan-register-laravel/
+# Tutorial 27 - Membuat Reset Password Laravel Via Email
+https://www.malasngoding.com/reset-password-laravel-email/
 
-- implement laravel Auth using:
-  php artisan make:auth
-- if command "make:auth" is not defined, do this:
-  1. composer require laravel/ui
-  2. php artisan ui bootstrap --auth
-  3. php artisan migrate
+- setup .env with current mailtrap.io configuration
+- type then submit in cmd: php artisan config:cache
+- when successfuly sent, check your inbox in mailtrap.io
