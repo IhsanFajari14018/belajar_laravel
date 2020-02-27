@@ -72,3 +72,8 @@ Route::get('/anggota', 'DikiController@index');
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+
+//Route Encrypt and Decrypt
+Route::get('/enkripsi', 'DikiController@enkripsi');
+Route::get('/data', 'DikiController@data');
+Route::get('/data/{data_rahasia}', 'DikiController@data_proses');
