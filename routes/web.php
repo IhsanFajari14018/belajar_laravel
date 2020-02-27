@@ -68,3 +68,7 @@ Route::get('/article', 'WebController@index');
 
 //Route Many to Many Relationship
 Route::get('/anggota', 'DikiController@index');
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
