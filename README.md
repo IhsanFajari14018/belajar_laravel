@@ -1,7 +1,9 @@
-# Tutorial 25 - Relasi Many To Many Eloquent
-https://www.malasngoding.com/tutorial-laravel-25-relasi-many-to-many-eloquent/
+# Tutorial 26 - Membuat Login dan Register Dengan Laravel
+https://www.malasngoding.com/membuat-login-dan-register-laravel/
 
-- The Connector table (Normalization for Many to Many relationship) name, must be with _ , like 'anggota' with 'hadiah', so it named 'anggota_hadiah'
-- Both models use belongsToMany()
-- multi loop in foreach, will return the relationship data
-- You also can count each ammount of hadiah (array)
+- implement laravel Auth using:
+  php artisan make:auth
+- if Command "make:auth" is not defined, do this:
+  composer require laravel/ui
+  php artisan ui bootstrap --auth
+  php artisan migrate
