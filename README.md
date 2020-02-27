@@ -1,6 +1,7 @@
-# Tutorial 27 - Membuat Reset Password Laravel Via Email
-https://www.malasngoding.com/reset-password-laravel-email/
+# Tutorial 28 - Encrypt and Decrypt Laravel
+https://www.malasngoding.com/encrypt-dan-decrypt-laravel/
 
-- setup .env with current mailtrap.io configuration
-- type then submit in cmd: php artisan config:cache
-- when successfuly sent, check your inbox in mailtrap.io
+- use Illuminate\Support\Facades\Crypt;
+- Call Encrypt:  Crypt::encryptString('String')
+- Call Decrypt:  Crypt::decrypt($variable)
+- Array can also be encrypt and decrypt
