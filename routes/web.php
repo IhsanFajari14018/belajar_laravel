@@ -81,3 +81,7 @@ Route::get('/data/{data_rahasia}', 'DikiController@data_proses');
 //Route hash
 Route::get('/hash', 'DikiController@hash');
 Route::get('/verify', 'DikiController@verify');
+
+//Route Upload File
+Route::get('/upload', 'UploadController@upload');
+Route::post('/upload/proses', 'UploadController@proses_upload');
