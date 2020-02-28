@@ -1,6 +1,6 @@
-# Tutorial 29 - Hashing Pada Laravel
-https://www.malasngoding.com/hashing-pada-laravel
+# Tutorial 30 - Membuat Upload File Laravel
+https://www.malasngoding.com/membuat-upload-file-laravel
 
-- use Illuminate\Support\Facades\Hash
-- hashing options can be changed in hashing.php
-- hash can be used in storing password and password verificator
+- First tutorial, create simple upload method
+- Uploaded file saved in public folder and will create new folder if the folder is not exist
+- Second tutorial, upload file and record the name to DB
