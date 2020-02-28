@@ -1,7 +1,6 @@
-# Tutorial 28 - Encrypt and Decrypt Laravel
-https://www.malasngoding.com/encrypt-dan-decrypt-laravel/
+# Tutorial 29 - Hashing Pada Laravel
+https://www.malasngoding.com/hashing-pada-laravel
 
-- use Illuminate\Support\Facades\Crypt;
-- Call Encrypt:  Crypt::encryptString('String')
-- Call Decrypt:  Crypt::decrypt($variable)
-- Array can also be encrypt and decrypt
+- use Illuminate\Support\Facades\Hash
+- hashing options can be changed in hashing.php
+- hash can be used in storing password and password verificator
