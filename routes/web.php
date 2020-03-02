@@ -85,3 +85,4 @@ Route::get('/verify', 'DikiController@verify');
 //Route Upload File
 Route::get('/upload', 'UploadController@upload');
 Route::post('/upload/proses', 'UploadController@proses_upload');
+Route::get('/upload/hapus/{id}', 'UploadController@hapus'); //delete file
