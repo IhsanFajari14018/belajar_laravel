@@ -1,4 +1,4 @@
-# Tutorial 31 - Hapus File Dengan Laravel
-https://www.malasngoding.com/hapus-file-dengan-laravel
+# Tutorial 31 - Session Laravel
+https://www.malasngoding.com/session-laravel/
 
-- Delete from DB (record) and Server (file)
+- Tutorial to show, add, remove session
