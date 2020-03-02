@@ -86,3 +86,8 @@ Route::get('/verify', 'DikiController@verify');
 Route::get('/upload', 'UploadController@upload');
 Route::post('/upload/proses', 'UploadController@proses_upload');
 Route::get('/upload/hapus/{id}', 'UploadController@hapus'); //delete file
+
+//Session
+Route::get('/session/tampil', 'TesController@tampilkanSession');
+Route::get('/session/buat', 'TesController@buatSession');
+Route::get('/session/hapus', 'TesController@hapusSession');
