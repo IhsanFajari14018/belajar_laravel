@@ -1,7 +1,6 @@
-# Tutorial 28 - Encrypt and Decrypt Laravel
-https://www.malasngoding.com/encrypt-dan-decrypt-laravel/
+# Tutorial 34 - Error Handling Laravel
+https://www.malasngoding.com/error-handling-laravel/
 
-- use Illuminate\Support\Facades\Crypt;
-- Call Encrypt:  Crypt::encryptString('String')
-- Call Decrypt:  Crypt::decrypt($variable)
-- Array can also be encrypt and decrypt
+- Disable displaying error log to web by setting APP_DEBUG value to true
+- All error log available in ../storage/logs/laravel.log
+- Custom error throw with return `abort()`

@@ -77,3 +77,27 @@ Route::get('/home', 'HomeController@index')->name('home');
 Route::get('/enkripsi', 'DikiController@enkripsi');
 Route::get('/data', 'DikiController@data');
 Route::get('/data/{data_rahasia}', 'DikiController@data_proses');
+
+//Route hash
+Route::get('/hash', 'DikiController@hash');
+Route::get('/verify', 'DikiController@verify');
+
+//Route Upload File
+Route::get('/upload', 'UploadController@upload');
+Route::post('/upload/proses', 'UploadController@proses_upload');
+Route::get('/upload/hapus/{id}', 'UploadController@hapus'); //delete file
+
+//Session
+Route::get('/session/tampil', 'TesController@tampilkanSession');
+Route::get('/session/buat', 'TesController@buatSession');
+Route::get('/session/hapus', 'TesController@hapusSession');
+
+//Session: Flash
+Route::get('/pesan', 'NotifController@index');
+Route::get('/pesan/sukses', 'NotifController@sukses');
+Route::get('/pesan/peringatan', 'NotifController@peringatan');
+Route::get('/pesan/gagal', 'NotifController@gagal');
+
+//Error Handling
+Route::get('/gowedd', 'GoweddController@index');
+Route::get('/page/{name}', 'GoweddController@getPage');
