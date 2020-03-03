@@ -97,3 +97,7 @@ Route::get('/pesan', 'NotifController@index');
 Route::get('/pesan/sukses', 'NotifController@sukses');
 Route::get('/pesan/peringatan', 'NotifController@peringatan');
 Route::get('/pesan/gagal', 'NotifController@gagal');
+
+//Error Handling
+Route::get('/gowedd', 'GoweddController@index');
+Route::get('/page/{name}', 'GoweddController@getPage');
