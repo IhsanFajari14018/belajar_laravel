@@ -1,4 +1,5 @@
-# Tutorial 32 - Session Laravel
-https://www.malasngoding.com/session-laravel/
+# Tutorial 33 - Notifikasi Dengan Session Laravel
+https://www.malasngoding.com/notifikasi-dengan-session-laravel/
 
-- Tutorial to show, add, remove session
+- Create Flash Session
+- Used to notify activity
