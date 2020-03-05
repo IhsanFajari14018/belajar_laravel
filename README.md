@@ -1,6 +1,7 @@
-# Tutorial 34 - Error Handling Laravel
-https://www.malasngoding.com/error-handling-laravel/
+# Tutorial 35 - Kirim Email Dengan Laravel
+https://www.malasngoding.com/kirim-email-dengan-laravel
 
-- Disable displaying error log to web by setting APP_DEBUG value to true
-- All error log available in ../storage/logs/laravel.log
-- Custom error throw with return `abort()`
+- Setup the email in .env
+- using Mailable class from Laravel
+- Create the blade for the body of the email. It includes passing value.
+- Setup receiver from Controller
