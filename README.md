@@ -1,6 +1,6 @@
-# Tutorial 34 - Error Handling Laravel
-https://www.malasngoding.com/error-handling-laravel/
+# Tutorial 36 - Verifikasi Email User Laravel
+https://www.malasngoding.com/verifikasi-email-user-laravel
 
-- Disable displaying error log to web by setting APP_DEBUG value to true
-- All error log available in ../storage/logs/laravel.log
-- Custom error throw with return `abort()`
+- Setup the email in .env
+- set attribute verified in controller `__construct`
+- model must implements `MustVerifyEmail`

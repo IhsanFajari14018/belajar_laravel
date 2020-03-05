@@ -71,6 +71,9 @@ Route::get('/anggota', 'DikiController@index');
 
 Auth::routes();
 
+//verifikasi email user
+Auth::routes(['verify' => true]);
+
 Route::get('/home', 'HomeController@index')->name('home');
 
 //Route Encrypt and Decrypt
@@ -101,3 +104,6 @@ Route::get('/pesan/gagal', 'NotifController@gagal');
 //Error Handling
 Route::get('/gowedd', 'GoweddController@index');
 Route::get('/page/{name}', 'GoweddController@getPage');
+
+//Mail Sender
+Route::get('/kirim_email', 'GoweddController@index');
