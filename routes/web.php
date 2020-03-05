@@ -71,6 +71,9 @@ Route::get('/anggota', 'DikiController@index');
 
 Auth::routes();
 
+//verifikasi email user
+Auth::routes(['verify' => true]);
+
 Route::get('/home', 'HomeController@index')->name('home');
 
 //Route Encrypt and Decrypt
