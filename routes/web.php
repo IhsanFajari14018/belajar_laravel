@@ -101,3 +101,6 @@ Route::get('/pesan/gagal', 'NotifController@gagal');
 //Error Handling
 Route::get('/gowedd', 'GoweddController@index');
 Route::get('/page/{name}', 'GoweddController@getPage');
+
+//Mail Sender
+Route::get('/kirim_email', 'GoweddController@index');
