@@ -1,7 +1,6 @@
-# Tutorial 35 - Kirim Email Dengan Laravel
-https://www.malasngoding.com/kirim-email-dengan-laravel
+# Tutorial 36 - Verifikasi Email User Laravel
+https://www.malasngoding.com/verifikasi-email-user-laravel
 
 - Setup the email in .env
-- using Mailable class from Laravel
-- Create the blade for the body of the email. It includes passing value.
-- Setup receiver from Controller
+- set attribute verified in controller `__construct`
+- model must implements `MustVerifyEmail`
