@@ -12,8 +12,7 @@ class GoweddController extends Controller{
     Mail::to("ihsan.fajari@gmail.com")->send(new GoweddEmail());
     return "Email sent.";
   }
-
-  //
+  
   public function getPage($nama){
     if ($nama == "gowedd" ) {
       return abort(403, 'Error: User are not authorized');
